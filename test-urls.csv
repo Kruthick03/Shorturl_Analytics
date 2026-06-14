@@ -1,0 +1,4 @@
+url,alias,expiry
+https://www.wikipedia.org,wiki-test,2026-12-31T23:59:59
+https://github.com/google,google-gh,2027-01-01T00:00:00
+https://news.ycombinator.com,,

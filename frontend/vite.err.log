@@ -1,0 +1,873 @@
+[2m12:31:53 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "socket.io-client" from "src/api/socket.js". Does the file exist?
+[2m12:31:53 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "socket.io-client" from "src/api/socket.js". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/api/socket.js[39m:1:21
+[33m  1  |  import { io } from "socket.io-client";
+     |                      ^
+  2  |  
+  3  |  function getSocketUrl() {[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:31:53 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "socket.io-client" from "src/api/socket.js". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/api/socket.js[39m:1:21
+[33m  1  |  import { io } from "socket.io-client";
+     |                      ^
+  2  |  
+  3  |  function getSocketUrl() {[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:32:05 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "socket.io-client" from "src/api/socket.js". Does the file exist?
+[2m12:32:39 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "socket.io-client" from "src/api/socket.js". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/api/socket.js[39m:1:21
+[33m  1  |  import { io } from "socket.io-client";
+     |                      ^
+  2  |  
+  3  |  function getSocketUrl() {[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:32:50 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "socket.io-client" from "src/api/socket.js". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/api/socket.js[39m:1:21
+[33m  1  |  import { io } from "socket.io-client";
+     |                      ^
+  2  |  
+  3  |  function getSocketUrl() {[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:33:02 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "socket.io-client" from "src/api/socket.js". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/api/socket.js[39m:1:21
+[33m  1  |  import { io } from "socket.io-client";
+     |                      ^
+  2  |  
+  3  |  function getSocketUrl() {[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:33:08 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "socket.io-client" from "src/api/socket.js". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/api/socket.js[39m:1:21
+[33m  1  |  import { io } from "socket.io-client";
+     |                      ^
+  2  |  
+  3  |  function getSocketUrl() {[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m12:33:11 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "socket.io-client" from "src/api/socket.js". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/api/socket.js[39m:1:21
+[33m  1  |  import { io } from "socket.io-client";
+     |                      ^
+  2  |  
+  3  |  function getSocketUrl() {[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:10:39 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m2:10:39 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m2:10:39 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m2:10:39 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:10:47 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?
+[2m2:10:47 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:10:51 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:11:00 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m2:11:00 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?
+[2m2:11:00 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:11:00 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m2:11:00 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m2:11:47 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:11:48 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:11:49 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:11:49 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:11:50 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:12:23 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to load url /src/pages/Analytics.jsx (resolved id: D:/Shorturl-Analytical-Project/frontend/src/pages/Analytics.jsx) in D:/Shorturl-Analytical-Project/frontend/src/App.jsx. Does the file exist?
+[2m2:12:24 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?
+[2m2:12:24 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:12:32 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?
+[2m2:12:32 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?
+[2m2:12:32 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Analytics.jsx[39m:15:29
+[33m  30 |  import { Link, useParams } from "react-router-dom";
+  31 |  import api from "../api/axios";
+  32 |  import { createSocket } from "../api/socket";
+     |                                ^
+  33 |  import Navbar from "../components/Navbar";
+  34 |  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m2:12:32 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Analytics.jsx[39m:15:29
+[33m  30 |  import { Link, useParams } from "react-router-dom";
+  31 |  import api from "../api/axios";
+  32 |  import { createSocket } from "../api/socket";
+     |                                ^
+  33 |  import Navbar from "../components/Navbar";
+  34 |  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m2:12:32 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:12:32 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Analytics.jsx[39m:15:29
+[33m  30 |  import { Link, useParams } from "react-router-dom";
+  31 |  import api from "../api/axios";
+  32 |  import { createSocket } from "../api/socket";
+     |                                ^
+  33 |  import Navbar from "../components/Navbar";
+  34 |  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:12:32 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:12:32 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:12:52 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?
+[2m2:12:52 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Analytics.jsx[39m:15:29
+[33m  30 |  import { Link, useParams } from "react-router-dom";
+  31 |  import api from "../api/axios";
+  32 |  import { createSocket } from "../api/socket";
+     |                                ^
+  33 |  import Navbar from "../components/Navbar";
+  34 |  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m2:12:52 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?
+[2m2:12:52 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Analytics.jsx[39m:15:29
+[33m  30 |  import { Link, useParams } from "react-router-dom";
+  31 |  import api from "../api/axios";
+  32 |  import { createSocket } from "../api/socket";
+     |                                ^
+  33 |  import Navbar from "../components/Navbar";
+  34 |  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:12:52 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:12:52 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:12:52 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Analytics.jsx[39m:15:29
+[33m  30 |  import { Link, useParams } from "react-router-dom";
+  31 |  import api from "../api/axios";
+  32 |  import { createSocket } from "../api/socket";
+     |                                ^
+  33 |  import Navbar from "../components/Navbar";
+  34 |  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:12:52 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:13:11 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?
+[2m2:13:11 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?
+[2m2:13:12 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Analytics.jsx[39m:15:29
+[33m  30 |  import { Link, useParams } from "react-router-dom";
+  31 |  import api from "../api/axios";
+  32 |  import { createSocket } from "../api/socket";
+     |                                ^
+  33 |  import Navbar from "../components/Navbar";
+  34 |  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m2:13:12 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Analytics.jsx[39m:15:29
+[33m  30 |  import { Link, useParams } from "react-router-dom";
+  31 |  import api from "../api/axios";
+  32 |  import { createSocket } from "../api/socket";
+     |                                ^
+  33 |  import Navbar from "../components/Navbar";
+  34 |  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m2:13:12 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:13:12 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Analytics.jsx[39m:15:29
+[33m  30 |  import { Link, useParams } from "react-router-dom";
+  31 |  import api from "../api/axios";
+  32 |  import { createSocket } from "../api/socket";
+     |                                ^
+  33 |  import Navbar from "../components/Navbar";
+  34 |  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:13:12 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m2:13:12 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+[2m2:14:25 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?
+[2m2:14:25 pm[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?
+[2m2:14:25 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Analytics.jsx[39m:15:29
+[33m  30 |  import { Link, useParams } from "react-router-dom";
+  31 |  import api from "../api/axios";
+  32 |  import { createSocket } from "../api/socket";
+     |                                ^
+  33 |  import Navbar from "../components/Navbar";
+  34 |  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:14:25 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:14:25 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Analytics.jsx[39m:15:29
+[33m  30 |  import { Link, useParams } from "react-router-dom";
+  31 |  import api from "../api/axios";
+  32 |  import { createSocket } from "../api/socket";
+     |                                ^
+  33 |  import Navbar from "../components/Navbar";
+  34 |  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:14:25 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:14:26 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Analytics.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Analytics.jsx[39m:15:29
+[33m  30 |  import { Link, useParams } from "react-router-dom";
+  31 |  import api from "../api/axios";
+  32 |  import { createSocket } from "../api/socket";
+     |                                ^
+  33 |  import Navbar from "../components/Navbar";
+  34 |  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+[2m2:14:26 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../api/socket" from "src/pages/Dashboard.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/Shorturl-Analytical-Project/frontend/src/pages/Dashboard.jsx[39m:4:29
+[33m  19 |  import { useEffect, useState } from "react";
+  20 |  import api from "../api/axios";
+  21 |  import { createSocket } from "../api/socket";
+     |                                ^
+  22 |  import Navbar from "../components/Navbar";
+  23 |  import UrlCard from "../components/UrlCard";[39m
+      at TransformPluginContext._formatError (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///D:/Shorturl-Analytical-Project/frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
