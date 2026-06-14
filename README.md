@@ -421,4 +421,8 @@ Please paste your video explanation/demo link (Loom/YouTube) below:
 
 ---
 
-This project is a part of a hackathon run by [https://katomaran.com](https://katomaran.com)
+## Repository
+
+**GitHub:** [Shorturl_Analytics](https://github.com/Kruthick03/Shorturl_Analytics)
+
+This is an open-source URL shortening platform with real-time analytics. Feel free to fork, contribute, or use it for your projects!
