@@ -22,6 +22,25 @@ function getRandomItem(arr) {
 
 export async function seedDatabase() {
   try {
+    // 0. Ensure role column exists in users table
+    await pool.query("ALTER TABLE users ADD COLUMN IF NOT EXISTS role VARCHAR(20) DEFAULT 'user'");
+
+    // Seed admin user
+    const ADMIN_EMAIL = "admin@example.com";
+    const ADMIN_PASSWORD = "Admin@123";
+    const adminCheck = await pool.query("SELECT id FROM users WHERE email = $1", [ADMIN_EMAIL]);
+    if (adminCheck.rowCount === 0) {
+      console.log(`[Seeder] Creating admin user: ${ADMIN_EMAIL}...`);
+      const hashedAdminPassword = await bcrypt.hash(ADMIN_PASSWORD, 12);
+      await pool.query(
+        "INSERT INTO users (name, email, password, role) VALUES ($1, $2, $3, $4)",
+        ["Admin User", ADMIN_EMAIL, hashedAdminPassword, "admin"]
+      );
+    } else {
+      // Ensure existing admin has the correct role
+      await pool.query("UPDATE users SET role = 'admin' WHERE email = $1", [ADMIN_EMAIL]);
+    }
+
     // 1. Check if demo user exists
     const userRes = await pool.query("SELECT id FROM users WHERE email = $1", [DEMO_EMAIL]);
     let userId;

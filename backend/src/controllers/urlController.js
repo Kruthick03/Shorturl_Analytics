@@ -250,3 +250,116 @@ export async function updateUrl(req, res) {
   }
 }
 
+export async function getAdminUrls(req, res) {
+  try {
+    const result = await pool.query(
+      `SELECT u.id, u.original_url, u.short_code, u.clicks, u.created_at, u.expires_at,
+              u.user_id, us.name AS creator_name, us.email AS creator_email
+       FROM urls u
+       LEFT JOIN users us ON u.user_id = us.id
+       ORDER BY u.created_at DESC`
+    );
+
+    return res.json({
+      urls: result.rows.map((url) => ({
+        ...url,
+        shortUrl: getShortUrl(url.short_code)
+      }))
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Unable to load all URLs for admin" });
+  }
+}
+
+export async function adminDeleteUrl(req, res) {
+  try {
+    const result = await pool.query(
+      "DELETE FROM urls WHERE id = $1 RETURNING id",
+      [req.params.id]
+    );
+
+    if (result.rowCount === 0) {
+      return res.status(404).json({ message: "URL not found" });
+    }
+
+    return res.status(204).send();
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Unable to delete URL" });
+  }
+}
+
+export async function adminUpdateUrl(req, res) {
+  const { originalUrl, expiresAt } = req.body;
+  const urlId = req.params.id;
+
+  if (originalUrl && !isValidUrl(originalUrl)) {
+    return res.status(400).json({ message: "A valid http or https URL is required" });
+  }
+
+  const parsedExpiresAt = expiresAt ? new Date(expiresAt) : null;
+  if (expiresAt && isNaN(parsedExpiresAt.getTime())) {
+    return res.status(400).json({ message: "Invalid expiry date format" });
+  }
+
+  try {
+    let result;
+    if (originalUrl && expiresAt !== undefined) {
+      result = await pool.query(
+        `UPDATE urls SET original_url = $1, expires_at = $2
+         WHERE id = $3
+         RETURNING id, original_url, short_code, clicks, created_at, expires_at`,
+        [originalUrl, parsedExpiresAt, urlId]
+      );
+    } else if (originalUrl) {
+      result = await pool.query(
+        `UPDATE urls SET original_url = $1
+         WHERE id = $2
+         RETURNING id, original_url, short_code, clicks, created_at, expires_at`,
+        [originalUrl, urlId]
+      );
+    } else if (expiresAt !== undefined) {
+      result = await pool.query(
+        `UPDATE urls SET expires_at = $1
+         WHERE id = $2
+         RETURNING id, original_url, short_code, clicks, created_at, expires_at`,
+        [parsedExpiresAt, urlId]
+      );
+    } else {
+      return res.status(400).json({ message: "Nothing to update" });
+    }
+
+    if (result.rowCount === 0) {
+      return res.status(404).json({ message: "URL not found" });
+    }
+
+    return res.json({
+      url: {
+        ...result.rows[0],
+        shortUrl: getShortUrl(result.rows[0].short_code)
+      }
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Unable to update URL" });
+  }
+}
+
+export async function getDbInspectorData(req, res) {
+  try {
+    const usersResult = await pool.query("SELECT id, name, email, role, created_at, SUBSTRING(password, 1, 12) || '...' AS password FROM users ORDER BY id ASC");
+    const urlsResult = await pool.query("SELECT id, original_url, short_code, clicks, user_id, created_at, expires_at FROM urls ORDER BY id ASC");
+    const visitsResult = await pool.query("SELECT id, url_id, visited_at, ip_address, browser, os, device, country FROM visits ORDER BY id ASC");
+
+    return res.json({
+      users: usersResult.rows,
+      urls: urlsResult.rows,
+      visits: visitsResult.rows
+    });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Unable to load database inspector data" });
+  }
+}
+

@@ -7,7 +7,7 @@ import {
   PointElement,
   Tooltip
 } from "chart.js";
-import { ArrowLeft, MousePointerClick } from "lucide-react";
+import { ArrowLeft, MousePointerClick, BarChart3, Activity, Calendar, Globe, MapPin, ShieldAlert } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
 import { Link, useParams } from "react-router-dom";
@@ -17,48 +17,17 @@ import Navbar from "../components/Navbar";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);
 
-function renderStatList(title, items, total) {
-  return (
-    <div className="space-y-3">
-      <h3 className="font-bold text-xs text-slate-500 uppercase tracking-wider">{title}</h3>
-      {(!items || items.length === 0) ? (
-        <p className="text-xs text-slate-400">No data available</p>
-      ) : (
-        <div className="space-y-2.5">
-          {items.map((item, index) => {
-            const name = item.browser || item.os || item.device || item.country || "Unknown";
-            const count = Number(item.count || 0);
-            const percentage = total > 0 ? Math.round((count / total) * 100) : 0;
-            return (
-              <div key={index} className="space-y-1">
-                <div className="flex justify-between text-xs font-bold text-slate-700">
-                  <span>{name}</span>
-                  <span>{count} ({percentage}%)</span>
-                </div>
-                <div className="h-2 w-full rounded-full bg-slate-100 overflow-hidden">
-                  <div
-                    className="h-full bg-brand rounded-full transition-all duration-500"
-                    style={{ width: `${percentage}%` }}
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      )}
-    </div>
-  );
-}
-
 export default function Analytics() {
   const { id } = useParams();
   const [urls, setUrls] = useState([]);
   const [analytics, setAnalytics] = useState(null);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function load() {
       try {
+        setLoading(true);
         if (id) {
           const response = await api.get(`/analytics/${id}`);
           setAnalytics(response.data);
@@ -67,7 +36,9 @@ export default function Analytics() {
           setUrls(response.data.urls);
         }
       } catch {
-        setError("Unable to load analytics");
+        setError("Unable to load analytics data.");
+      } finally {
+        setLoading(false);
       }
     }
 
@@ -115,27 +86,12 @@ export default function Analytics() {
           dailyTrend.push({ date: event.visit.visited_at, clicks: 1 });
         }
 
-        const updateAggregates = (list, key) => {
-          const arr = [...(list || [])];
-          const idx = arr.findIndex((item) => (item[key] || "Unknown") === (event.visit[key] || "Unknown"));
-          if (idx >= 0) {
-            arr[idx] = { ...arr[idx], count: Number(arr[idx].count) + 1 };
-          } else {
-            arr.push({ [key]: event.visit[key] || "Unknown", count: 1 });
-          }
-          return arr.sort((a, b) => Number(b.count) - Number(a.count));
-        };
-
         return {
           ...current,
           totalClicks: event.clicks,
           lastVisited: event.visit.visited_at,
           recentVisits: [event.visit, ...current.recentVisits].slice(0, 20),
-          dailyTrend,
-          browsers: updateAggregates(current.browsers, "browser"),
-          os: updateAggregates(current.os, "os"),
-          devices: updateAggregates(current.devices, "device"),
-          countries: updateAggregates(current.countries, "country")
+          dailyTrend
         };
       });
     });
@@ -143,29 +99,66 @@ export default function Analytics() {
     return () => socket.disconnect();
   }, [id]);
 
+  // Index Mode: Show all URLs so user can select one
   if (!id) {
     return (
       <>
         <Navbar />
-        <main className="mx-auto w-full max-w-6xl px-4 py-8">
-          <section className="mb-6">
-            <div>
-              <h1 className="text-3xl font-black">Analytics</h1>
-              <p className="mt-2 text-slate-600">Select a short link to inspect its traffic.</p>
-            </div>
+        <main className="mx-auto w-full max-w-6xl px-4 py-8 page-wrapper">
+          <section className="mb-8">
+            <h1 className="text-3xl font-black text-slate-900 flex items-center gap-2">
+              <BarChart3 className="text-emerald-500 h-7 w-7" />
+              Link Analytics
+            </h1>
+            <p className="mt-1.5 text-sm font-semibold text-slate-500 leading-relaxed max-w-xl">
+              Inspect your shortened links and monitor real-time visitor activity feeds.
+            </p>
           </section>
-          {error && <p className="rounded-lg bg-red-50 px-4 py-3 text-sm font-bold text-red-700">{error}</p>}
-          <section className="grid gap-3">
-            {urls.length === 0 && !error && (
-              <div className="card grid place-items-center gap-2 border-dashed p-12 text-center text-slate-600">
-                <MousePointerClick size={32} />
-                <p className="font-bold">No URLs available.</p>
+
+          {error && (
+            <div className="mb-6 flex items-center gap-2 rounded-xl bg-rose-50 border border-rose-100 px-4 py-3 text-xs font-bold text-rose-700">
+              <ShieldAlert size={16} />
+              <span>{error}</span>
+            </div>
+          )}
+
+          <section className="grid gap-4">
+            {loading && (
+              <div className="py-20 text-center text-slate-500 flex flex-col items-center justify-center gap-2">
+                <svg className="animate-spin h-6 w-6 text-slate-400" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                </svg>
+                <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Loading links...</p>
               </div>
             )}
-            {urls.map((url) => (
-              <Link className="card grid gap-2 p-4 transition hover:border-emerald-300 md:grid-cols-[1fr_auto] md:items-center" key={url.id} to={`/analytics/${url.id}`}>
-                <span className="break-all font-bold">{url.shortUrl}</span>
-                <small className="font-black text-slate-500">{url.clicks} clicks</small>
+            {!loading && urls.length === 0 && !error && (
+              <div className="card grid place-items-center gap-3 border-2 border-dashed border-slate-200 p-16 text-center text-slate-400 bg-slate-50/50">
+                <div className="p-3 bg-white rounded-2xl shadow-sm border border-slate-100">
+                  <MousePointerClick size={36} className="text-slate-400" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-slate-700 text-sm">No URLs to inspect</h3>
+                  <p className="text-xs font-medium text-slate-500 mt-1 max-w-xs">Create shortened links on the dashboard first to view their analytics.</p>
+                </div>
+              </div>
+            )}
+            {!loading && urls.map((url) => (
+              <Link 
+                className="card-interactive grid gap-4 p-5 transition md:grid-cols-[1fr_auto] md:items-center relative overflow-hidden" 
+                key={url.id} 
+                to={`/analytics/${url.id}`}
+              >
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-slate-200" />
+                <div className="min-w-0 pl-1">
+                  <span className="break-all font-black text-sm text-slate-800">{url.shortUrl}</span>
+                  <p className="truncate text-xs font-semibold text-slate-400 mt-1">{url.original_url}</p>
+                </div>
+                <div className="flex items-center gap-2 self-start md:self-auto shrink-0 pl-1 md:pl-0 mt-2 md:mt-0">
+                  <span className="rounded-full bg-emerald-50 border border-emerald-100 px-3 py-1 text-[11px] font-black text-emerald-600">
+                    {url.clicks} clicks
+                  </span>
+                </div>
               </Link>
             ))}
           </section>
@@ -174,114 +167,182 @@ export default function Analytics() {
     );
   }
 
+  // Link Specific Analytics Mode
   return (
     <>
       <Navbar />
-      <main className="mx-auto w-full max-w-6xl px-4 py-8">
-        <Link className="mb-5 inline-flex items-center gap-2 text-sm font-bold text-brand" to="/analytics">
-          <ArrowLeft size={16} />
-          All analytics
+      <main className="mx-auto w-full max-w-6xl px-4 py-8 page-wrapper">
+        <Link className="mb-6 inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-emerald-600 hover:text-emerald-700 transition" to="/analytics">
+          <ArrowLeft size={14} className="stroke-[3]" />
+          <span>All Link Analytics</span>
         </Link>
 
-        <section className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
-            <h1 className="text-3xl font-black">Link analytics</h1>
-            <p className="mt-2 break-all text-slate-600">{analytics?.url?.shortUrl}</p>
+        {error && (
+          <div className="mb-6 flex items-center gap-2 rounded-xl bg-rose-50 border border-rose-100 px-4 py-3 text-xs font-bold text-rose-700">
+            <ShieldAlert size={16} />
+            <span>{error}</span>
           </div>
-          <div className="card min-w-40 p-4 md:text-right">
-            <span className="block text-3xl font-black">{analytics?.totalClicks ?? 0}</span>
-            <small className="font-bold text-slate-500">Total clicks</small>
-            <p className="mt-1 text-xs font-semibold text-emerald-700">Live updates on</p>
+        )}
+
+        {!analytics && !error && (
+          <div className="py-20 text-center text-slate-500 flex flex-col items-center justify-center gap-2">
+            <svg className="animate-spin h-6 w-6 text-slate-400" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+            </svg>
+            <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Loading metrics...</p>
           </div>
-        </section>
-
-        {error && <p className="rounded-lg bg-red-50 px-4 py-3 text-sm font-bold text-red-700">{error}</p>}
-
-        {!analytics && !error && <p className="font-semibold text-slate-600">Loading analytics...</p>}
+        )}
 
         {analytics && (
-          <div className="grid gap-4 lg:grid-cols-2">
-            <section className="card p-5 lg:col-span-2">
-              <h2 className="mb-4 text-lg font-black">Daily click trend</h2>
-              {analytics.dailyTrend.length === 0 ? (
-                <p className="text-slate-600">No clicks recorded yet.</p>
-              ) : (
-                <Line
-                  data={{
-                    labels: analytics.dailyTrend.map((item) => new Date(item.date).toLocaleDateString()),
-                    datasets: [
-                      {
-                        label: "Clicks",
-                        data: analytics.dailyTrend.map((item) => item.clicks),
-                        borderColor: "#147a4b",
-                        backgroundColor: "#147a4b",
-                        tension: 0.35
-                      }
-                    ]
-                  }}
-                  options={{
-                    responsive: true,
-                    plugins: { legend: { display: false } },
-                    scales: { y: { beginAtZero: true, ticks: { precision: 0 } } }
-                  }}
-                />
-              )}
-            </section>
-
-            <section className="card p-5 lg:col-span-2 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-              <div className="md:col-span-2 lg:col-span-4 border-b border-slate-100 pb-3">
-                <h2 className="text-lg font-black">Visitor Breakdown</h2>
-                <p className="text-xs text-slate-500 mt-1">Detailed view of browsers, devices, OS, and countries of your visitors.</p>
+          <div className="space-y-6">
+            {/* Header info */}
+            <section className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between border-b border-slate-100 pb-6">
+              <div className="min-w-0">
+                <h1 className="text-3xl font-black tracking-tight text-slate-900">Traffic Analysis</h1>
+                <p className="mt-1.5 break-all text-xs font-mono font-bold text-emerald-600">{analytics.url.shortUrl}</p>
               </div>
-              {renderStatList("Top Countries", analytics.countries, analytics.totalClicks)}
-              {renderStatList("Devices", analytics.devices, analytics.totalClicks)}
-              {renderStatList("Operating Systems", analytics.os, analytics.totalClicks)}
-              {renderStatList("Browsers", analytics.browsers, analytics.totalClicks)}
-            </section>
-
-            <section className="card p-5">
-              <h2 className="mb-4 text-lg font-black">Visit summary</h2>
-              <div className="grid gap-3">
-                <div className="rounded-lg bg-slate-50 p-4">
-                  <p className="text-sm font-bold text-slate-500">Last visit</p>
-                  <p className="mt-1 font-black">
-                    {analytics.lastVisited ? new Date(analytics.lastVisited).toLocaleString() : "No visits yet"}
-                  </p>
+              <div className="card-interactive bg-white border border-slate-100 flex items-center gap-4 py-3.5 px-5 shrink-0 self-start md:self-auto">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-500 border border-emerald-100 shadow-sm">
+                  <Activity size={18} className="stroke-[2.5]" />
                 </div>
-                <div className="rounded-lg bg-slate-50 p-4">
-                  <p className="text-sm font-bold text-slate-500">Destination</p>
-                  <p className="mt-1 break-all font-semibold">{analytics.url.original_url}</p>
+                <div>
+                  <span className="block text-2xl font-black text-slate-800 tracking-tight">{analytics.totalClicks}</span>
+                  <small className="text-[10px] font-black uppercase tracking-wider text-slate-400">Total clicks</small>
                 </div>
               </div>
             </section>
 
-            <section className="card p-5">
-              <h2 className="mb-4 text-lg font-black">Recent visit history</h2>
-              {analytics.recentVisits.length === 0 && (
-                <div className="grid place-items-center gap-2 rounded-lg border border-dashed border-slate-300 p-8 text-slate-600">
-                  <MousePointerClick size={28} />
-                  <p className="font-bold">No traffic yet.</p>
+            {/* Click Trend Graph */}
+            <section className="grid gap-6 lg:grid-cols-3">
+              <div className="card p-6 lg:col-span-2">
+                <div className="flex items-center justify-between mb-5 border-b border-slate-50 pb-3">
+                  <div>
+                    <h2 className="text-sm font-black text-slate-800">Daily Click Trend</h2>
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-0.5">Metrics over the past 30 days</p>
+                  </div>
+                  <div className="flex items-center gap-1 bg-emerald-50 border border-emerald-100 text-emerald-600 rounded-full px-2.5 py-0.5 text-[9px] font-extrabold uppercase tracking-wider">
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-ping" />
+                    <span>Real-time Feed</span>
+                  </div>
                 </div>
-              )}
-              <div className="divide-y divide-slate-100 max-h-[400px] overflow-y-auto pr-1">
-                {analytics.recentVisits.map((visit) => (
-                  <div className="py-3 text-xs" key={visit.id}>
-                    <div className="flex justify-between items-center mb-1">
-                      <span className="font-bold text-slate-700 text-sm">
-                        {new Date(visit.visited_at).toLocaleString()}
-                      </span>
-                      <strong className="text-slate-400">#{visit.id}</strong>
+
+                {analytics.dailyTrend.length === 0 ? (
+                  <div className="py-24 text-center text-slate-400 flex flex-col items-center justify-center gap-1.5">
+                    <Calendar size={28} className="stroke-[1.5]" />
+                    <p className="text-xs font-bold text-slate-500">No clicks recorded yet</p>
+                  </div>
+                ) : (
+                  <div className="relative">
+                    <Line
+                      data={{
+                        labels: analytics.dailyTrend.map((item) => new Date(item.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })),
+                        datasets: [
+                          {
+                            label: "Clicks",
+                            data: analytics.dailyTrend.map((item) => item.clicks),
+                            borderColor: "#10b981",
+                            backgroundColor: "rgba(16, 185, 129, 0.04)",
+                            tension: 0.35,
+                            borderWidth: 3,
+                            pointRadius: 4,
+                            pointBackgroundColor: "#10b981",
+                            pointBorderColor: "#ffffff",
+                            pointBorderWidth: 1.5,
+                            fill: true
+                          }
+                        ]
+                      }}
+                      options={{
+                        responsive: true,
+                        plugins: { legend: { display: false } },
+                        animation: {
+                          duration: 1500,
+                          easing: "easeInOutQuart"
+                        },
+                        hover: {
+                          mode: 'nearest',
+                          intersect: true
+                        },
+                        scales: {
+                          x: { grid: { display: false }, ticks: { font: { weight: "bold", size: 10 } } },
+                          y: { beginAtZero: true, grid: { color: "#f1f5f9" }, ticks: { precision: 0, font: { weight: "bold", size: 10 } } }
+                        }
+                      }}
+                    />
+                  </div>
+                )}
+              </div>
+
+              {/* Visit Summary Card */}
+              <div className="card p-6 flex flex-col justify-between">
+                <div>
+                  <h2 className="text-sm font-black text-slate-800 mb-4 border-b border-slate-50 pb-3">Link Summary</h2>
+                  <div className="space-y-4">
+                    <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                      <span className="block text-[9px] font-black uppercase tracking-wider text-slate-400">Destination</span>
+                      <p className="mt-1 break-all text-xs font-semibold text-slate-700 leading-relaxed">{analytics.url.original_url}</p>
                     </div>
-                    <div className="flex flex-wrap gap-x-3 gap-y-1 text-slate-500 font-semibold">
-                      <span>IP: <span className="font-mono text-slate-600">{visit.ip_address || "Unknown"}</span></span>
-                      <span>Country: <span className="text-slate-700">{visit.country || "Unknown"}</span></span>
-                      <span>OS: <span className="text-slate-700">{visit.os || "Unknown"}</span></span>
-                      <span>Browser: <span className="text-slate-700">{visit.browser || "Unknown"}</span></span>
-                      <span>Device: <span className="text-slate-700">{visit.device || "Unknown"}</span></span>
+                    <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                      <span className="block text-[9px] font-black uppercase tracking-wider text-slate-400">Created At</span>
+                      <p className="mt-1 text-xs font-bold text-slate-700">
+                        {new Date(analytics.url.created_at).toLocaleString()}
+                      </p>
                     </div>
                   </div>
-                ))}
+                </div>
+
+                <div className="bg-emerald-50/50 p-3.5 rounded-xl border border-emerald-100 mt-4">
+                  <span className="block text-[9px] font-black uppercase tracking-wider text-emerald-600">Last visited</span>
+                  <p className="mt-1 text-xs font-black text-emerald-800">
+                    {analytics.lastVisited ? new Date(analytics.lastVisited).toLocaleString() : "No visits logged yet"}
+                  </p>
+                </div>
               </div>
+            </section>
+
+            {/* Simplified Live History Feed */}
+            <section className="card p-6">
+              <div className="flex items-center justify-between mb-5 border-b border-slate-50 pb-3">
+                <div>
+                  <h2 className="text-sm font-black text-slate-800">Live Traffic Feed</h2>
+                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-0.5">Chronological feed of redirect events</p>
+                </div>
+              </div>
+
+              {analytics.recentVisits.length === 0 ? (
+                <div className="py-20 text-center text-slate-400 flex flex-col items-center justify-center gap-1.5 border border-dashed border-slate-200 rounded-xl bg-slate-50/40">
+                  <Globe size={32} className="stroke-[1.5]" />
+                  <h4 className="text-xs font-bold text-slate-600">Waiting for visits...</h4>
+                  <p className="text-[11px] font-medium text-slate-400">Visitor clicks will stream live into this feed.</p>
+                </div>
+              ) : (
+                <div className="divide-y divide-slate-100 max-h-[350px] overflow-y-auto pr-2">
+                  {analytics.recentVisits.map((visit) => (
+                    <div 
+                      className="py-3.5 text-xs flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2.5 animate-fade-in" 
+                      key={visit.id}
+                    >
+                      <div className="flex items-center gap-3">
+                        <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 border border-slate-200">
+                          <MapPin size={14} />
+                        </div>
+                        <div>
+                          <div className="flex items-center gap-1.5">
+                            <span className="font-mono font-bold text-slate-700">{visit.ip_address || "Unknown IP"}</span>
+                            <span className="text-[10px] font-black uppercase text-slate-400">•</span>
+                            <span className="font-extrabold text-slate-500">{visit.country || "Unknown Country"}</span>
+                          </div>
+                          <span className="text-[10px] text-slate-400 font-semibold">Redirect Event ID #{visit.id}</span>
+                        </div>
+                      </div>
+                      <span className="text-[11px] font-black text-slate-500 self-start sm:self-auto">
+                        {new Date(visit.visited_at).toLocaleString()}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </section>
           </div>
         )}

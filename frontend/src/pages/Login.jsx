@@ -78,11 +78,11 @@ export default function Login() {
         <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
 
         {/* Brand logo */}
-        <div className="flex items-center gap-2.5 font-black text-xl text-emerald-400 z-10">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-400 to-teal-500 text-slate-950 shadow-lg shadow-emerald-500/20">
+        <div className="flex items-center gap-2.5 font-black text-xl text-cyan-400 z-10">
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 text-white shadow-lg shadow-blue-500/20">
             <Link2 size={20} className="stroke-[3]" />
           </div>
-          <span>ShortURL Analytics</span>
+          <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">URLytics</span>
         </div>
 
         {/* Live Mock Analytics Card */}
@@ -134,7 +134,7 @@ export default function Login() {
 
         <div className="w-full max-w-md z-10">
           <form 
-            className={`bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 rounded-3xl p-8 sm:p-10 shadow-2xl grid gap-6 relative transition-all duration-300 ${demoActive ? "ring-2 ring-emerald-500/30 scale-[1.01]" : ""}`} 
+            className={`bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 rounded-3xl p-8 sm:p-10 shadow-2xl grid gap-6 relative transition-all duration-300 animate-fade-in-up ${demoActive ? "ring-2 ring-emerald-500/30 scale-[1.01]" : ""}`} 
             onSubmit={handleSubmit}
             onKeyDown={handleKeyDown}
           >
@@ -144,7 +144,7 @@ export default function Login() {
               <p className="mt-2 text-sm text-slate-400 font-semibold">Log in to manage and track your links.</p>
             </div>
 
-            <div className="grid gap-4.5 mt-2">
+            <div className="grid gap-4 mt-2">
               <label className="relative block">
                 <span className="text-xs font-bold uppercase tracking-wider text-slate-400">Email Address</span>
                 <div className="relative mt-1.5">
@@ -155,7 +155,7 @@ export default function Login() {
                     name="email"
                     type="email"
                     placeholder="you@example.com"
-                    className="pl-10 pr-4 w-full rounded-xl border border-slate-850 bg-slate-950/80 text-white placeholder-slate-600 py-3 outline-none transition focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 text-sm"
+                    className="pl-10 pr-4 w-full rounded-xl border border-slate-800 bg-slate-950/80 text-white placeholder-slate-650 py-3 outline-none transition focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 text-sm"
                     value={form.email}
                     onChange={updateField}
                     required
@@ -173,7 +173,7 @@ export default function Login() {
                     name="password"
                     type={showPassword ? "text" : "password"}
                     placeholder="••••••••"
-                    className="pl-10 pr-10 w-full rounded-xl border border-slate-850 bg-slate-950/80 text-white placeholder-slate-600 py-3 outline-none transition focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 text-sm"
+                    className="pl-10 pr-10 w-full rounded-xl border border-slate-800 bg-slate-950/80 text-white placeholder-slate-650 py-3 outline-none transition focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 text-sm"
                     value={form.password}
                     onChange={updateField}
                     required
