@@ -417,8 +417,7 @@ PostgreSQL Database
 ## Video Demonstration
 
 Please paste your video explanation/demo link (Loom/YouTube) below:
-- **Demo Video Link:** `[Insert explanatory video link here]`
-
+- **Demo Video Link:https://youtu.be/xjpwqTn2Hgo
 ---
 
 ## Repository
